@@ -1,0 +1,48 @@
+<h2 class="page-header">Create Portfolio</h2>
+{{#if errors}}
+      {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+      {{/each}}
+{{/if}}
+<form method="post" action="/users/createPortfolio">
+{{!--for portfolio--}}
+   <div class="form-group">
+    <label>Portfolio Title</label>
+    <input type="text" class="form-control" placeholder="Title" name="title">
+  </div>
+   <div class="form-group">
+    <label>Name</label>
+    <input type="text" class="form-control" placeholder="Name" name="name">
+  </div>
+   <div class="form-group">
+    <label>Username</label>
+    <input type="text" class="form-control" placeholder="Username" name="username">
+  </div>
+  <div class="form-group">
+    <label>Profile Picture</label>
+    <input type="image" class="form-control" placeholder="Profile picture (optional)" name="profilepic">
+  </div>
+  {{!--//for work--}}
+    <div class="form-group">
+    <label>Description</label>
+    <input type="text" class="form-control" placeholder="Work Description" name="description">
+  </div>
+  <div class="form-group">
+    <label>Screenshot</label>
+    <input type="image" class="form-control" placeholder="Screenshot" name="screenshot">
+  </div>
+
+  <div class="form-group">
+    <label>URL</label>
+    <input type="text" class="form-control" placeholder="URL" name="URL">
+  </div>
+  <button type="submit" class="btn btn-default">Create</button>
+
+{{!--enctype="multipart/form-data
+  <form action="/pictures/upload" method="POST" enctype="multipart/form-data">
+  Select an image to upload:
+  <input type="file" name="image"> 
+  <input type="submit" value="Upload Image">--}}
+</form>
+
+</form>

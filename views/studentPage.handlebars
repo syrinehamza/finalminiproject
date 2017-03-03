@@ -1,0 +1,25 @@
+ <h2 class="page-header">Student Page</h2>
+<!--<p>Welcome to your dashboard</p> --> 
+
+
+<div class="row">
+        <div class="col-xs-12 col-md-8">
+            <div class="row">
+                {{!--<% for(var i=0; i<projects.length; i++){%>
+                    
+                <% } %>--}}
+                <ul class="projects list">
+                    {{#each projects}}
+                    <div class="card col-xs-4">
+                    <h4 class="card-title"> Title: {{title}}</h4>
+                    <p> Name: {{name}} </p>
+                    <p> URL: {{URL}} </p>
+                    </div>
+                         {{!--<div class="card col-xs-4">
+                        <h4 class="card-title"> <%= projects[i].title %></h4>
+                        <a href="<%= projects[i].URL %>" class="btn btn-primary card-link">Visit Website</a>
+                    </div>--}}
+                    {{/each}}
+</ul>
+            </div>
+        </div>
